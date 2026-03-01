@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --font-sans: var(--font-nunito);
+    --font-mono: var(--font-geist-mono);
+    /* Cream White background */
+    --background: 56 100% 97%;
+    --foreground: 0 0% 12%;
+    /* Card: white */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
+    /* Primary: Sunshine Yellow #FFD700 */
+    --primary: 51 100% 50%;
+    --primary-foreground: 0 0% 12%;
+    /* Secondary: Zesty Orange #FFA500 */
+    --secondary: 39 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+    /* Muted: soft cream */
+    --muted: 48 60% 92%;
+    --muted-foreground: 0 0% 40%;
+    /* Accent: Cherry Red #FF4500 */
+    --accent: 16 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 16 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 48 30% 85%;
+    --input: 48 30% 85%;
+    --ring: 51 100% 50%;
+    --chart-1: 51 100% 50%;
+    --chart-2: 39 100% 50%;
+    --chart-3: 136 61% 47%;
+    --chart-4: 209 100% 50%;
+    --chart-5: 16 100% 50%;
+    --radius: 1rem;
+
+    /* Custom brand colors */
+    --sunshine: #FFD700;
+    --orange: #FFA500;
+    --lime: #32C032;
+    --skyblue: #008FFF;
+    --cherry: #FF4500;
+    --cream: #FFFDD0;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--sunshine);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange);
+}

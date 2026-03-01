@@ -1,0 +1,19 @@
+component: nextjs
+name: my-video-blog
+stage: prod
+
+inputs:
+  src: ./
+  region: ap-guangzhou
+  runtime: Nodejs16.x
+  memorySize: 1024
+  timeout: 60
+  environment:
+    variables:
+      JWT_SECRET: your-secure-jwt-secret-key-change-this-in-production
+      NEXT_PUBLIC_CLOUDBASE_ENV_ID: myblog-4gtj7ltu3af117fc
+  exclude:
+    - .git
+    - node_modules
+    - .next
+    - .env.local
