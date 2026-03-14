@@ -37,13 +37,13 @@ export function Navbar() {
               <Link href="#painpoints" className="text-foreground/70 hover:text-foreground font-semibold transition-colors">
                 {"适合你吗"}
               </Link>
-              <button
+              {/* <button
                 onClick={() => setIsLoginOpen(true)}
                 className="bg-foreground text-cream px-5 py-2 rounded-full font-bold hover:bg-foreground/90 transition-colors text-sm flex items-center gap-2"
               >
                 <LogIn size={16} />
                 {"登录"}
-              </button>
+              </button> */}
             </div>
 
             {/* Mobile Menu Toggle */}
@@ -70,7 +70,7 @@ export function Navbar() {
                 <Link href="#painpoints" className="text-foreground/70 hover:text-foreground hover:bg-sunshine/20 px-4 py-2.5 rounded-lg font-semibold transition-colors" onClick={() => setIsOpen(false)}>
                   {"适合你吗"}
                 </Link>
-                <button
+                {/* <button
                   onClick={() => {
                     setIsOpen(false)
                     setIsLoginOpen(true)
@@ -79,7 +79,7 @@ export function Navbar() {
                 >
                   <LogIn size={16} />
                   {"登录"}
-                </button>
+                </button> */}
               </div>
             </div>
           )}

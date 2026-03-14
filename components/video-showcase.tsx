@@ -124,10 +124,10 @@ export function VideoShowcase() {
                   </div>
                 </div>
                 {/* Duration badge */}
-                <div className="absolute bottom-2 right-2 bg-foreground/80 text-cream text-xs font-bold px-2 py-1 rounded-md flex items-center gap-1">
+                {/* <div className="absolute bottom-2 right-2 bg-foreground/80 text-cream text-xs font-bold px-2 py-1 rounded-md flex items-center gap-1">
                   <Clock size={10} />
                   {"0:00"}
-                </div>
+                </div> */}
                 {/* Category badge */}
                 <div className={`absolute top-2 left-2 text-xs font-bold px-2.5 py-1 rounded-full ${categoryColorMap[video.category] || "bg-muted text-foreground"}`}>
                   {video.category}
@@ -142,7 +142,7 @@ export function VideoShowcase() {
                 <p className="text-foreground/50 text-sm leading-relaxed line-clamp-2 mb-3">
                   {video.description}
                 </p>
-                <div className="flex items-center gap-4 text-xs text-foreground/40">
+                {/* <div className="flex items-center gap-4 text-xs text-foreground/40">
                   <span className="flex items-center gap-1">
                     <Eye size={12} />
                     {"0"}
@@ -151,7 +151,7 @@ export function VideoShowcase() {
                     <Heart size={12} />
                     {"0"}
                   </span>
-                </div>
+                </div> */}
               </div>
             </button>
           ))}
@@ -209,14 +209,14 @@ export function VideoShowcase() {
                 <span className={`text-xs font-bold px-2.5 py-1 rounded-full ${categoryColorMap[activeVideo.category] || "bg-muted text-foreground"}`}>
                   {activeVideo.category}
                 </span>
-                <span className="text-xs text-foreground/40 flex items-center gap-1">
+                {/* <span className="text-xs text-foreground/40 flex items-center gap-1">
                   <Clock size={10} />
                   {"0:00"}
-                </span>
+                </span> */}
               </div>
               <h3 className="text-xl font-black text-foreground mb-2">{activeVideo.title}</h3>
               <p className="text-foreground/50 leading-relaxed">{activeVideo.description}</p>
-              <div className="flex items-center gap-5 mt-4 text-sm text-foreground/40">
+              {/* <div className="flex items-center gap-5 mt-4 text-sm text-foreground/40">
                 <span className="flex items-center gap-1.5">
                   <Eye size={14} />
                   {"0"} {"次观看"}
@@ -225,7 +225,7 @@ export function VideoShowcase() {
                   <Heart size={14} />
                   {"0"} {"次喜欢"}
                 </span>
-              </div>
+              </div> */}
             </div>
           </div>
 
